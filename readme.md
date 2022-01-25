@@ -24,7 +24,6 @@ Text-expander:
 - AutoHotKey (programming language, works only on Windows, due to its programming language nature, it offer great flexibility)
 - Espanso (works on every major os, can't say much more as I haven't used it myself. It have some bugs)
 - FastFox (don't particularly recommand it because of the ending character deletion)
-- texpander
 
 This is a small list, and you con find more if you search for text-editor/text-expander.
 
