@@ -95,4 +95,4 @@ end
 
 # in example 2, 720 briefs written in one line ✓
   
-println.(parse_brief(str_list(readline())...))
+println.(parse_brief(str_list(readline())...) |> writebrief)
