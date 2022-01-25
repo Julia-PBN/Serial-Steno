@@ -4,7 +4,7 @@ This is to explain what Serial-Steno is. (and maybe later to host the softwares 
 
 Serial-steno come from serial, and steno. Steno is any way of writting which is faster than the conventional way. Usually, it's done by pressing chords on your keyboard,
 which get translated into words. But it is only a part of steno, chorded-steno. See Plover from the OpenSteno project.
-Serial-steno is also on computer, but instead of chording, you press each letters one by one. The speed is gain from briefs (and various shortening methods) which reduces
+Serial-steno is also on computer, but instead of chording, you press each letter one by one. The speed is gained from briefs (and various shortening methods) which reduce
 the number of keypresses.
 
 # How to use serial-steno?
@@ -22,15 +22,16 @@ Text-editor: (which I know can support the creation of a serial-steno system)
 
 Text-expander:
 - AutoHotKey (programming language, works only on Windows, due to its programming language nature, it offer great flexibility)
-- Espanso (works on every major os, can't say much more as I haven't used it myself)
+- Espanso (works on every major os, can't say much more as I haven't used it myself. It have some bugs)
 - FastFox (don't particularly recommand it because of the ending character deletion)
+- texpander
 
 This is a small list, and you con find more if you search for text-editor/text-expander.
 
 # How does it works?
 
 You'll build (or use a pre-existing) a dictionary. Which is a translation between briefs and their meaning.
-It may be full word, or just suffixs, or prefixs. As long as it serve to write faster (by reducing keypresses) and you can express the behavior to the text-expander/text-editor,
+It may be full word, or just suffixs, or prefixs. As long as it serves to write faster (by reducing keypresses) and you can express the behavior to the text-expander/text-editor,
 it can be used.
 
 some examples using AutoHotKey syntax:
