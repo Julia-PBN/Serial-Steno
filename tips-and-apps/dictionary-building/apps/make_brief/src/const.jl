@@ -30,6 +30,15 @@ E_verb = raw"""
 )
 """
 
+E_DEMON_PRONOUN = raw"""
+
+(
+	ta: that|
+	ti: this|
+	to: those|
+	te: these
+)
+"""
 
 
 # French (prefixed with F_)

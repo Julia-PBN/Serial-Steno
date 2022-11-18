@@ -1,6 +1,5 @@
 include("util.jl")
-
-function slex(s::String)
+function _slex(s::String)
     V = String[]
     do_write::Bool = true
     i = 1
@@ -29,7 +28,7 @@ function slex(s::String)
                 do_write = false
             elseif c == TOK_DL
                 next_dl = findnext(s, TOK_DL, i+1)
-                append!(V, ("CONST." * s[nextind(s, i):prevind(s, next_dl)]) |> Meta.parse |> eval |> slex)
+                append!(V, ("CONST." * s[nextind(s, i):prevind(s, next_dl)]) |> Meta.parse |> eval |> _slex)
                 i = next_dl
                 @goto CONT
             elseif c in TOKENS
@@ -49,4 +48,12 @@ function slex(s::String)
     end
 
     V
+end
+
+function slex(s::String)
+	t = time()
+	println(stderr, "starting lexing")
+	r = _slex(s)
+	println(stderr, "ended lexing in $(time()-t)s")
+	return r
 end

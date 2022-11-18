@@ -105,7 +105,7 @@ struct BinOp <: Node
 end
 
 struct Block <: Node
-    require::Function
+    require::Logic.LNode
     provide::Vector{Symbol}
     func::Function
     fallback::Function
